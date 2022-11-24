@@ -29,7 +29,7 @@ class QwtInterval;
 class QwtText;
 template< typename T > class QList;
 
-#define QWT_AXIS_COMPAT 0 // flag to disable compatibilities - will be removed later
+#define QWT_AXIS_COMPAT 1 // flag to disable compatibilities - will be removed later
 #define QWT_DUMMY_ID 0 // dummy id to help for migrating the code - will be removed later
 
 /*!
@@ -246,7 +246,7 @@ class QWT_EXPORT QwtPlot : public QFrame, public QwtPlotDict
         xBottom = QwtAxis::XBottom,
         xTop    = QwtAxis::XTop,
 
-        axisCnt = QwtAxis::AxisCount
+        //axisCnt  = QwtAxis::AxisCount
     };
 
     void enableAxis( int axisId, bool on = true )
